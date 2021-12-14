@@ -9,17 +9,16 @@ body {
 }
 
 .container-column {
-    padding: 300px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .column {
-    margin-top: 50px;
+    transform: translateY(30vh);
     width: 300px;
     height: 300px;
-    background-color: rgba(218, 165, 32, 0.7);
+    background-color: rgba(30, 30, 50, 0.8);
 }
 
 .link {
@@ -29,7 +28,7 @@ body {
     text-align: center;
     line-height: 300px;
     color: rgb(245, 245, 245);
-    font-size: 20px;
+    font-size: 35px;
     text-decoration: none;
 }
 
@@ -37,7 +36,10 @@ body {
     max-width: 1400px;
     margin: 0 auto;
     background-color: rgb(245, 245, 245);
+    cursor: pointer;
 }
+
+
 
 .section-title {
     padding: 30px;
@@ -47,6 +49,7 @@ body {
     padding-left: 100px;
     text-align: center;
     background-color: rgba(30, 30, 50, 0.8);
+    cursor: pointer;
 }
 
 .main-title {
@@ -59,15 +62,65 @@ body {
     color: rgb(130, 130, 150);
     text-align: center;
     background-color: rgba(30, 30, 50, 0.06);
+    display: none;
+}
+
+.text-container.active {
+    display: block;
 }
 
 p {
     margin: 0 100px;
     padding-top: 20px;
+    line-height: 50px;
+}
+
+.center {
+    font-size: 35px;
+    text-align: center;
+    background-color: rgb(20, 30, 50);
+    margin: 100px 0;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+.last {
+    margin-bottom: 50px;
+}
+
+.answer,
+.question {
+    text-align: left;
+    margin: 20px;
+}
+
+.underline {
+    background-color: goldenrod;
+    color: whitesmoke;
+}
+
+.answer {
+    padding: 0 10px;
+    border: 2px solid rgb(130, 130, 150);
+    border-left: none;
+    border-right: none;
+    max-width: fit-content;
+    margin-left: 100px;
+}
+
+.answer::first-letter {
+    text-transform: uppercase;
+}
+
+.question {
+    background-color: rgb(20, 30, 50);
+    padding: 10px 50px;
+    color: whitesmoke;
+    padding-left: 100px;
 }
 
 span {
-    color: gold;
+    color: goldenrod;
 }
 
 @media (max-width:675px) {
@@ -84,4 +137,37 @@ span {
     p {
         margin: 0;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.select-card {
+    margin: 100px;
+    padding: 50px;
+}
+
+.select-card-content {
+    display: none;
+}
+
+.select-card-content.active {
+    display: block;
+}
+
+.select-title {
+    margin-top: 0;
+    cursor: pointer;
 }
