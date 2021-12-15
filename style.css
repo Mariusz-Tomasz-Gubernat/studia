@@ -123,36 +123,6 @@ span {
     color: goldenrod;
 }
 
-@media (max-width:675px) {
-    .section-title {
-        font-size: 30px;
-        padding-left: 30px;
-
-    }
-
-    .text-container {
-        font-size: 20px;
-    }
-
-    p {
-        margin: 0;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .select-card {
     margin: 100px;
@@ -170,4 +140,30 @@ span {
 .select-title {
     margin-top: 0;
     cursor: pointer;
+}
+
+@media (max-width:675px) {
+
+    .section-title {
+        font-size: 30px;
+        padding-left: 30px;
+
+    }
+
+    .text-container {
+        font-size: 20px;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .select-card {
+        margin: 0;
+        padding: 50px 10px;
+    }
+
+    .center {
+        font-size: 25px;
+    }
 }
